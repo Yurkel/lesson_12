@@ -1,3 +1,6 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 *,
 *::after,
 *::before {
@@ -11,7 +14,51 @@ html {
 }
 
 body {
-  font-family: 'Graphik LCG';
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Graphik LCG', sans-serif;
   font-size: 15px;
-  background-color: red;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+h1 {
+  font-weight: 600;
+  line-height: 1.08;
+
+
+  @include xl-min {
+    font-size: 65px;
+  }
+
+  @include xl-lg {
+    font-size: 50px;
+  }
+
+  @include lg {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+
+  @include xl-min {
+    font-size: 50px;
+  }
+
+  @include xl-lg {
+    font-size: 40px;
+  }
+
+  @include lg {
+    font-size: 30px;
+  }
 }
