@@ -380,3 +380,57 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.header-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 10px;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1199.8px) and (min-width: 992px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991.8px) {
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
