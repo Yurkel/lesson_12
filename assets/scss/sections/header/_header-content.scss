@@ -20,7 +20,6 @@
 
   @include lg {
     grid-template-areas: "ttl""dsc""img""act""nts";
-    grid-template-columns: 580px 1fr;
   }
 
   row-gap: $gap;

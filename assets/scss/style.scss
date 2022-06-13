@@ -9,5 +9,9 @@
 @use "sections/header/header-navbar";
 @use "sections/header/header-actions";
 @use "sections/header/header-content";
-@use "sections/main/brands";
 @use "sections/main/main";
+@use "sections/main/brands";
+@use "sections/main/job/control";
+@use "sections/main/job/time";
+@use "sections/main/job/quality";
+@use "sections/main/job/work";
