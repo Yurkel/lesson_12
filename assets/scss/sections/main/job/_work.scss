@@ -3,6 +3,7 @@
 
 .work {
   flex-direction: row-reverse;
+  gap: $gap * 7;
   @extend %job-article;
 
   &__content {
