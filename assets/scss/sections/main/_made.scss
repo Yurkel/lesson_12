@@ -1,0 +1,48 @@
+@use "../../presets/index" as *;
+@use "../../mixins/index" as *;
+
+.made {
+  background-color: $color-bg-accent;
+  display: flex;
+  text-align: center;
+}
+
+
+.made-container {
+  padding-top: 120px;
+  padding-bottom: 160px;
+
+
+  &__title {
+    line-height: 75px;
+    margin: 0;
+    margin-bottom: $gap;
+
+    @include xl-min {
+      font-size: 65px;
+      padding: 0 380px;
+    }
+
+    @include xl-lg {
+      font-size: 50px;
+      padding: 0 200px;
+    }
+
+    @include lg-md {
+      font-size: 40px;
+      padding: 0 100px;
+      ;
+    }
+
+    @include md {
+      font-size: 40px;
+      padding: $gap;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+}

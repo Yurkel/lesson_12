@@ -27,19 +27,30 @@
   background-color: $color-accent;
 }
 
+.btn--total {
+  color: $color-white;
+  border-color: $color-black;
+  background-color: $color-black;
+}
+
 .btn--s {
   @include lg-min {
-    min-height: 45px;
     min-width: 120px;
+    min-height: 45px;
   }
 
   @include lg {
-    min-height: 40px;
     min-width: 100px;
+    min-height: 40px;
   }
 }
 
 .btn--m {
   min-width: 160px;
-  min-height: 45px;
+  min-height: 60px;
+}
+
+.btn--l {
+  min-height: 60px;
+  min-width: 193px;
 }

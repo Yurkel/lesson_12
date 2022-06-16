@@ -14,7 +14,7 @@
     display: grid;
 
     @include xl-min {
-      column-gap: 135px;
+      column-gap: 120px;
       row-gap: 75px;
       padding: 0 40px;
     }
@@ -48,6 +48,7 @@
   }
 
   &__description {
+    font-size: 18px;
     margin: 0;
   }
 
