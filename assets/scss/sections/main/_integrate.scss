@@ -37,13 +37,11 @@
   }
 
   &__description {
-    padding-left: 400px;
-    padding-right: 400px;
     font-size: 25px;
     line-height: 30px;
 
     @include xl-min {
-      padding: 0 400px;
+      padding: 0 500px;
     }
 
     @include xl-lg {

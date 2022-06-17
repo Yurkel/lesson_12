@@ -25,6 +25,11 @@ a {
   color: $color-black;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 h1 {
   font-weight: 600;
   line-height: 1.08;
