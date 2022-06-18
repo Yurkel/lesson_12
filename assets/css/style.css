@@ -787,10 +787,7 @@ h2 {
 
 .loved {
   background-color: #dabc98;
-  padding: 70px 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 70px 30px;
 }
 
 .loved-content {
@@ -798,8 +795,14 @@ h2 {
   display: -ms-flexbox;
   display: flex;
 }
-.loved-content__description {
-  text-align: left;
+
+.loved-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.loved-info__description {
+  font-size: 35px;
 }
 
 .loved-lables {
@@ -810,6 +813,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .integrate {
@@ -823,12 +828,14 @@ h2 {
   padding: 165px 0;
 }
 .integrate-content__title {
-  line-height: 75px;
   margin: 0;
 }
 .integrate-content__description {
   font-size: 25px;
   line-height: 30px;
+}
+.integrate-content__btn {
+  margin-top: 30px;
 }
 
 .made {
@@ -842,16 +849,15 @@ h2 {
   text-align: center;
 }
 
-.made-container {
+.made-contant {
   padding-top: 120px;
   padding-bottom: 160px;
 }
-.made-container__title {
-  line-height: 75px;
+.made-contant__title {
   margin: 0;
   margin-bottom: 20px;
 }
-.made-container__description {
+.made-contant__description {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 50px;
@@ -1010,11 +1016,19 @@ h2 {
     /*min-height: 500px;*/
     gap: 60px;
   }
-  .loved {
+  .loved-content {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     gap: 70px;
+  }
+  .loved-info__description {
+    line-height: 50px;
+    text-align: left;
+  }
+  .loved-info__description {
+    line-height: 30px;
+    text-align: center;
   }
   .integrate-content__image {
     width: 1023px;
@@ -1061,24 +1075,26 @@ h2 {
     row-gap: 75px;
     padding: 0 40px;
   }
-  .loved-content {
+  .loved-info {
     gap: 60px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     border-right: 1px solid #000000;
-    padding-right: 120px;
+    padding-right: 80px;
   }
   .integrate-content__title {
     font-size: 65px;
-    padding: 0 300px;
+    line-height: 75px;
+    padding: 0 250px;
   }
   .integrate-content__description {
-    padding: 0 500px;
+    padding: 0 350px;
   }
-  .made-container__title {
+  .made-contant__title {
     font-size: 65px;
-    padding: 0 380px;
+    line-height: 75px;
+    padding: 0 340px;
   }
 }
 @media (min-width: 1380px) {
@@ -1128,7 +1144,7 @@ h2 {
     grid-template-columns: repeat(3, minmax(50px, max-content));
     justify-items: center;
   }
-  .loved-content {
+  .loved-info {
     gap: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1138,14 +1154,16 @@ h2 {
   }
   .integrate-content__title {
     font-size: 50px;
-    padding: 0 200px;
+    line-height: 60px;
+    padding: 0 180px;
   }
   .integrate-content__description {
-    padding: 0 300px;
+    padding: 0 250px;
   }
-  .made-container__title {
+  .made-contant__title {
     font-size: 50px;
-    padding: 0 200px;
+    line-height: 60px;
+    padding: 0 180px;
   }
 }
 @media (max-width: 991.8px) {
@@ -1253,16 +1271,15 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
   }
-  .loved {
+  .loved-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    /*text-align: center;*/
+    /*align-items: center;*/
   }
-  .loved-content {
+  .loved-info {
     border-right: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1301,17 +1318,19 @@ h2 {
   }
   .integrate-content__title {
     font-size: 40px;
-    padding: 0 100px;
+    line-height: 40px;
+    padding: 0 80px;
   }
   .integrate-content__description {
-    padding: 0 200px;
+    padding: 0 150px;
   }
   .integrate-content__image {
     width: 70%;
   }
-  .made-container__title {
+  .made-contant__title {
     font-size: 40px;
-    padding: 0 100px;
+    line-height: 40px;
+    padding: 0 80px;
   }
   .stamp-right {
     padding-right: 0;
@@ -1338,12 +1357,11 @@ h2 {
   }
   .integrate-content__description {
     font-size: 1em;
-    padding: 20px;
   }
   .integrate-content__image {
     width: 50%;
   }
-  .made-container__title {
+  .made-contant__title {
     font-size: 40px;
     padding: 20px;
   }

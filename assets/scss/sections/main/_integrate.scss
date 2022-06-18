@@ -11,22 +11,24 @@
 
 
   &__title {
-    line-height: 75px;
     margin: 0;
 
     @include xl-min {
       font-size: 65px;
-      padding: 0 300px;
+      line-height: 75px;
+      padding: 0 250px;
     }
 
     @include xl-lg {
       font-size: 50px;
-      padding: 0 200px;
+      line-height: 60px;
+      padding: 0 180px;
     }
 
     @include lg-md {
       font-size: 40px;
-      padding: 0 100px;
+      line-height: 40px;
+      padding: 0 80px;
       ;
     }
 
@@ -41,21 +43,19 @@
     line-height: 30px;
 
     @include xl-min {
-      padding: 0 500px;
+      padding: 0 350px;
     }
 
     @include xl-lg {
-      padding: 0 300px;
+      padding: 0 250px;
     }
 
     @include lg-md {
-      padding: 0 200px;
-      ;
+      padding: 0 150px;
     }
 
     @include md {
       font-size: 1em;
-      padding: $gap;
     }
   }
 
@@ -72,5 +72,9 @@
     @include md {
       width: 50%;
     }
+  }
+
+  &__btn {
+    margin-top: 30px;
   }
 }

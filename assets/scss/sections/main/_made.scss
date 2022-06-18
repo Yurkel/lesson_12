@@ -9,29 +9,31 @@
 }
 
 
-.made-container {
+.made-contant {
   padding-top: 120px;
   padding-bottom: 160px;
 
 
   &__title {
-    line-height: 75px;
     margin: 0;
     margin-bottom: $gap;
 
     @include xl-min {
       font-size: 65px;
-      padding: 0 380px;
+      line-height: 75px;
+      padding: 0 340px;
     }
 
     @include xl-lg {
       font-size: 50px;
-      padding: 0 200px;
+      line-height: 60px;
+      padding: 0 180px;
     }
 
     @include lg-md {
       font-size: 40px;
-      padding: 0 100px;
+      line-height: 40px;
+      padding: 0 80px;
       ;
     }
 
